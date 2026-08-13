@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "creation": "2026-08-13 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "firm_name",
+  "assessment_year",
+  "invoice_prefix",
+  "invoice_seq",
+  "column_break_cfg",
+  "settings_json"
+ ],
+ "fields": [
+  {
+   "default": "Our Tax Team",
+   "fieldname": "firm_name",
+   "fieldtype": "Data",
+   "label": "Firm Name (used in messages & documents)"
+  },
+  {
+   "default": "2026-27",
+   "fieldname": "assessment_year",
+   "fieldtype": "Data",
+   "label": "Assessment Year"
+  },
+  {
+   "default": "NCG/ITR",
+   "fieldname": "invoice_prefix",
+   "fieldtype": "Data",
+   "label": "Invoice Prefix"
+  },
+  {
+   "default": "101",
+   "fieldname": "invoice_seq",
+   "fieldtype": "Int",
+   "label": "Next Invoice Serial"
+  },
+  {
+   "fieldname": "column_break_cfg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Key/value app settings (e.g. the editable senior-review template). Managed by the app.",
+   "fieldname": "settings_json",
+   "fieldtype": "Long Text",
+   "label": "Settings JSON"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-08-13 00:00:00",
+ "module": "PMS",
+ "name": "PMS Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "print": 1,
+   "read": 1,
+   "role": "PMS Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "PMS Senior Reviewer",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "PMS Staff",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

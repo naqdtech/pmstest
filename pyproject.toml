@@ -1,0 +1,30 @@
+[project]
+name = "pms"
+authors = [
+    { name = "NAQD Consulting", email = "info.naqd@gmail.com" }
+]
+description = "Practice Management System — ITR filing, statutory/audit case tracking, and a shared client master for a CA / tax practice. Built on Frappe with a Doppio React SPA."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
+
+[tool.flit.module]
+name = "pms"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"

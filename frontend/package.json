@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/pms/frontend/ && yarn copy-html-entry",
+    "copy-html-entry": "cp ../pms/public/frontend/index.html ../pms/www/frontend.html",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "frappe-js-sdk": "^1.9.0",
+    "frappe-react-sdk": "^1.11.0",
+    "html-to-image": "^1.11.13",
+    "jspdf": "^2.5.2",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.11"
+  }
+}

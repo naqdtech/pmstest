@@ -1,0 +1,11 @@
+{
+  "name": "pms",
+  "version": "0.0.1",
+  "description": "Root build orchestration for the PMS Doppio React SPA.",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd frontend && yarn install",
+    "dev": "cd frontend && yarn dev",
+    "build": "cd frontend && yarn build"
+  }
+}
